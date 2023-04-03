@@ -1,0 +1,10 @@
+# Images are stored in assets/logos, logos in the grid will be sorted by name
+- name: University of Helsinki
+  url: www.helsinki.fi/en
+  img: assets/logos/unihelsinki.png
+- name: CSC
+  url: www.csc.fi/en
+  img: assets/logos/csc.png
+- name: University of Turku
+  url: www.utu.fi/en
+  img: assets/logos/uniturku.png
