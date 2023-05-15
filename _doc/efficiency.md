@@ -7,5 +7,6 @@ icon:
   name: fa-magic
 color: orange
 sections:
-  - /efficiency/intro
+  - /efficiency/training
+  - /efficiency/inference
 ---
