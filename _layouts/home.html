@@ -75,15 +75,21 @@ layout: compress
 
             </div>
         </header>
-
-        <section class="cards-section text-center">
+	<section class="cards-section text-center">
             <div class="container">
 
                 <h2 class="title">{{ page.heading }}</h2>
 
 				<!-- INTRO -->
                 <div class="intro">{{ content }}</div>
+                <h2 class="title">News from GreenNLP</h2>
+                {% include news.html navigation=site.posts %}
+            </div>
+        </section>
 
+        <section class="cards-section text-center">
+            <div class="container">
+		    <h2 class="title">Areas of research</h2>
                 {% include navigation.html navigation=page.navigation %}
 
             </div>
@@ -105,12 +111,6 @@ layout: compress
 							   {% endfor %}
 		</div><!--//logos-wrapper-->
 
-            </div>
-        </section>
-	<section class="cards-section text-center">
-            <div class="container">
-                <h2 class="title">News</h2>
-                {% include news.html navigation=site.posts %}
             </div>
         </section>
     </div>
