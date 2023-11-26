@@ -7,5 +7,5 @@ icon:
   name: fa-cubes
 color: purple
 sections:
-  - /modular/intro
+  - /modular/modularmt
 ---
