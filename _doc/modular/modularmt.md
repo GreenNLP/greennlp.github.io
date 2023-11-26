@@ -19,7 +19,7 @@ Modularity can be described as enforcing a principled sparsity in a neural netwo
 
 [Cífka and Bojar (2018)](https://aclanthology.org/P18-1126/) introduced a fixed-size compound attention that bridges the encoder and the decoder in a typical sequence-to-sequence model used for machine translation. [Raganato et al. (2019)](https://aclanthology.org/W19-4304/) extended this model to the multilingual case and implemented a system called the "attention-bridge model". Here is a high-level image illustrating the idea:
 
-![](attention-bridge.png?raw=true)
+![](/modular/attention-bridge.png?raw=true)
 
 Language-specific encoders produce fixed-size representations through a shared final inner-attention layer. Language-specific decoders access only this information when producing the translations. The idea is to create a cross-lingual bottleneck that needs to be used for each combination of languages during training forcing the model to create multilingual representations that can bridge arbitrary languages. [Vázquez et al. (2020)](https://direct.mit.edu/coli/article-pdf/46/2/387/1847640/coli_a_00377.pdf) demonstrate that this model can perform translation in supervised and zero-shot scenarios stressing the effective modularization that can be achieved with this setup.
 
@@ -31,7 +31,7 @@ The advantage of the model is that encoders and decoders can be small individual
 
 An alternative to bridging structures for parameter sharing is to divide network into shared and language-specific components. [Purason and Tätter (2022)](https://aclanthology.org/2022.eamt-1.12/) experiment with multilingual neural MT models of varying amounts of parameter sharing. They differentiate between languag-specific encoders and decoders, group-wise shared layers and universally shared layers. Here is an illustration from their paper:
 
-![](purason-sharing.png?raw=true)
+![](/modular/purason-sharing.png?raw=true)
 
 [Boggia et al. (2023)](https://aclanthology.org/2023.nodalida-1.24/) take another systematic look on partial parameter sharing in such a setup and study the effect of increasing language coverage on task fitness, language-independence of the shared representations and semantic content. The conclusion is a careful design for parameter sharing is essential to optimize performance and representation learning.
 
