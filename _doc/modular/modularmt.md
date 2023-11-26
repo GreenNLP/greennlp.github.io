@@ -11,7 +11,7 @@ sections:
 
 ### What is modularity?
 
-Modularity can be described as enforcing a principled sparsity in a neural network, in which specific model parameters become active in specific circumstances. In multilingual machine translation, different translation directions can be seen as different tasks and modules may refer to language-specific components that are involved only in certain tasks. A canonical example would be to use language-specific encoders and decoders in a sequence-to-sequence setup. However, the purpose of multilingual models is to benefit from cross-lingual transfer. Therefore it is also desirable that certain parameters are shared to enable such transfer. Finding the optimal setup for combining parameter sharing with task-specific modules is difficult and below we discuss architectures that can be applied in multilingual modular machine neural translation.
+Modularity can be described as enforcing a principled sparsity in a neural network, in which specific model parameters become active in certain circumstances. In multilingual machine translation, different translation directions can be seen as different tasks and modules may refer to language-specific components that are involved only in certain tasks. A canonical example would be to use language-specific encoders and decoders in a sequence-to-sequence setup. However, the purpose of multilingual models is to benefit from cross-lingual transfer. Therefore it is also desirable that certain parameters are shared to enable such transfer. Finding the optimal setup for combining parameter sharing with task-specific modules is difficult and below we discuss architectures that can be applied in multilingual modular machine neural translation.
 
 
 ### The attention bridge model

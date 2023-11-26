@@ -7,5 +7,7 @@ icon:
   name: fa-recycle
 color: pink
 sections:
-  - /packaging/intro
+  - /packaging/software
+  - /packaging/datasets
+  - /packaging/models
 ---
