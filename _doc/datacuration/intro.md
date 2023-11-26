@@ -15,7 +15,11 @@ Data curation is essential for good performance and the efforts needed to filter
 
 Various pipelines exist for monolingual data curation but no one-size-fits-all solution can be found. Depending on the purpose, source and language, various steps need to be taken into consideration. Many big data sets come from open web crawls leading to the big mess that can be expected from the unrestricted sources on the internet.
 
-The [HPLT project]() extracts large quantities of monolingual texts from internet crawls and archives. [HPLT software](https://github.com/hplt-project) is released on Github for [extracting monolingual text](https://github.com/hplt-project/monotextor-slurm). It makes use of the [monotextor](https://github.com/bitextor/monotextor) pipelines.
+The [HPLT project](https://hplt-project.org/) extracts large quantities of monolingual texts from internet crawls and archives. [HPLT software](https://github.com/hplt-project) is released on Github for [extracting monolingual text](https://github.com/hplt-project/monotextor-slurm). It makes use of the [monotextor](https://github.com/bitextor/monotextor) pipelines.
+
+Another pipeline for [data preparation](https://github.com/bigscience-workshop/data-preparation) has been developed by the BigScience project.
+
+Yet another iniative is taken by the [OSCAR project](https://oscar-project.org/) with [Ungolian pipeline](https://github.com/oscar-project/ungoliant) for corpus creation from web crawls.
 
 
 ### Parallel data
