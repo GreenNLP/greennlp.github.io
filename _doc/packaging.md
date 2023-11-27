@@ -1,7 +1,7 @@
 ---
 title: Reuse and sustainability
 excerpt: Documentation, packaging and distribution
-date: 2016-01-25
+date: 2023-11-26
 icon:
   type: fa
   name: fa-recycle

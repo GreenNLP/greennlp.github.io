@@ -1,7 +1,7 @@
 ---
 title: Modular NLP
 excerpt: Cost-efficient components with modular multilingual NLP
-date: 2016-01-25
+date: 2023-11-26
 icon:
   type: fa
   name: fa-cubes
