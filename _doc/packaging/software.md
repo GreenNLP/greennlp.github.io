@@ -35,3 +35,4 @@ Project partners in GreenNLP publish there software packages and tools on the fo
 ### Tools for high-performance computing
 
 * [Machine learning scripts](https://github.com/CSCfi/machine-learning-scripts)
+* [GPU energy usage counter for AMD/ROCm](https://github.com/mvsjober/gpu-energy-amd)
