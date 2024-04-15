@@ -1,7 +1,7 @@
 ---
 layout: doc
 title:  "Industry and Society Webinar: Sustainable AI Solutions"
-date:   2024-01-16
+date:   2024-04-16
 categories: news
 ---
 GreenNLP is present at the Industry and Society Webinar on Sustainable AI Solutions organized by FCAI on 
