@@ -37,4 +37,4 @@ Other tools for parallel data curation are:
 * [OpusCleaner](https://github.com/hplt-project/OpusCleaner) for parallel data cleaning
 * [OpusFilter](https://github.com/Helsinki-NLP/OpusFilter) for filtering parellel data sets
 * [bicleaner](https://github.com/bitextor/bicleaner) and [bicleaner-ai](https://github.com/bitextor/bicleaner-ai) for detection of noise in parallel data
-* [biromer](https://github.com/bitextor/biroamer) for data anonymization
+* [biroamer](https://github.com/bitextor/biroamer) for data anonymization
