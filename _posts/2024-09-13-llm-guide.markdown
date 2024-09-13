@@ -1,0 +1,7 @@
+---
+layout: doc
+title:  "New guide: working with LLMs on supercomputers"
+date:   2024-09-13
+categories: news
+---
+An important part of the GreenNLP project is to disseminate guides and best-practices on efficient training of large language models in supercomputers. The first version of our ["Working with large language models on supercomputers"-guide has been published on CSC's documentation site](https://docs.csc.fi/support/tutorials/ml-llm/).
