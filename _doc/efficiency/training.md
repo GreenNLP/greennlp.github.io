@@ -1,43 +1,44 @@
 ---
 title: Efficient training
-sections:
-  - GPU utilization and profiling
-  - Mixed precision training
 ---
 
-### GPU utilization and profiling
+For getting started with efficient training of neural networks for
+NLP, check CSC's machine learning guide, which has been expanded and
+improved as part of the GreenNLP project.
 
-From the resource utilization point-of-view, a common first thing to
-check is the GPU utilization. The GPU utilization should ideally be
-close to 100%. If your utilization is consistently low (for example
-under 50%) it might be a sign of a bottle-neck in the processing
-pipeline. For example:
+Particularly relevant sections:
 
-- There might not be enough CPU cores reserved for data loading
-- File I/O is too slow (e.g., an overloaded shared file system in a
-  Supercomputer)
-  
-Having a GPU load of 100% is not a guarantee that the job is actually
-doing something useful on the GPU. Having a good reported GPU load can
-be considered as a neccessary, but not sufficient condition for an
-efficient job.
+- [Getting started with machine learning at
+  CSC](https://docs.csc.fi/support/tutorials/ml-starting/), for
+  getting started with doing machine learning on supercomputers from
+  scratch,
+- [GPU-accelerated machine
+    learning](https://docs.csc.fi/support/tutorials/gpu-ml/), which
+    discusses GPU utlization and common bottle-necks than can cause
+    low utilization,
+- [Data storage for machine
+  learning](https://docs.csc.fi/support/tutorials/ml-data/) which
+  discusses data storage in the context of supercomputers,
+- [Multi-GPU and multi-node machine
+  learning](https://docs.csc.fi/support/tutorials/ml-multi/) with
+  Slurm examples and short tutorials for PyTorch DDP, PyTorch
+  Lightning, Accelerate and DeepSpeed.
+- [Managing machine learning workflows on CSC's
+  supercomputers](https://docs.csc.fi/support/tutorials/ml-workflows/)
+  which covers using MLflow for tracking multiple runs and metrics,
+- [Working with large language models on
+  supercomputers](https://docs.csc.fi/support/tutorials/ml-llm/) which
+  discussess how to do efficient fine-tuning of LLMs on supercomputers.
 
-The next step would be to check with a profiler, such as the [PyTorch
-profiler](https://pytorch.org/tutorials/intermediate/tensorboard_profiler_tutorial.html)
-what operations are being performed. CSC's Machine learning guide has
-a [short tutorial on how to use the PyTorch
+Also relevant is the [PyTorch module
+documentation](https://docs.csc.fi/apps/pytorch/) which includes a
+[short tutorial on how to use the PyTorch
 profiler](https://docs.csc.fi/apps/pytorch/#pytorch-profiler).
 
 
-### Mixed precision training
+In GreenNLP we have also collected other links with recipies and tips
+for LLM training, in particular for LUMI:
 
-A simple way to speed up training is to enable mixed precision
-training, and for many software packages this is already the
-default. In mixed precision training, some floating points values are
-stored with reduced 16-bit precision in cases where the loss of
-precision is not critical. A simple way to do this is to [enable
-Automatic Mixed Precision
-(amp)](https://pytorch.org/docs/stable/amp.html#module-torch.amp) in
-PyTorch.
-
-
+- [TurkuNLP group's recipes for LUMI NLP training](https://github.com/TurkuNLP/lumi-nlp-recipes)
+- [Megatron-LM fork for LUMI](https://github.com/LumiOpen/Megatron-LM-lumi)
+- [LUMI NLP recipes and known problems collected by GreenNLP](https://siili.rahtiapp.fi/LUMI-NLP)
