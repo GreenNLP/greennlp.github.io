@@ -1,7 +1,8 @@
 ---
-title: Efficient use of LLMs
+title: Getting the most out of LLMs
 sections:
-  - Getting the most out of LLMs
+  - Introduction
+  - Tools of the trade
 ---
 
 ### Getting the most out of LLMs
@@ -13,6 +14,6 @@ Luckily, there are open-weight models that you can run on your own computer or s
 This page contains advice for how to run LLMs efficiently locally and links to other useful recourses.
 
 
-### Running LLMs
+### Tools of the trade
 
 More to come...
