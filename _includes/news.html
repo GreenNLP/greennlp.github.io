@@ -1,5 +1,5 @@
 <div id="cards-wrapper" class="cards-wrapper row">
-    {% for post in site.posts %}
+    {% for post in site.posts limit: 3 %}
 	    <div class="item item-{{ post.color }} col-md-4 col-sm-6 col-xs-6">
 		<div class="item-inner">
 		    <div class="icon-holder">
@@ -12,4 +12,5 @@
 		</div>
 	    </div>
     {% endfor %}
+    <a class="link" href="{{ site.baseurl }}/news.html">More news from GreenNLP...</a>
 </div>
