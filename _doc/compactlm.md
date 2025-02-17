@@ -1,7 +1,7 @@
 ---
-title: Compact language models
-excerpt: Decreasing runtime costs with compact language models
-date: 2016-01-25
+title: Efficient use of LLMs
+excerpt: Decreasing runtime costs by using LLMs efficiently
+date: 2025-02-07
 icon:
   type: fa
   name: fa-filter
