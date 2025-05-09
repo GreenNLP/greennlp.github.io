@@ -5,7 +5,7 @@ date:   2025-04-17
 categories: news
 ---
 
-Join us on May 16 at 10:00-13:00 in Helsinki (or online) for a session hosted by GreenNLP consortium (University of Helsinki, University of Turku, CSC) and the NVIDIA AI Technology Center (NVAITC) Finland. The event highlights developments in NLP technologies, including an overview and demo of NVIDIA’s NeMo framework.
+Join us on May 16 at 10:00-13:00 in Helsinki (or online) for a session hosted by GreenNLP consortium ([University of Helsinki](https://blogs.helsinki.fi/language-technology/), [University of Turku](https://turkunlp.org), [CSC](https://research.csc.fi)) and the [NVIDIA AI Technology Center (NVAITC) Finland](https://fcai.fi/nvaitc). The event highlights developments in NLP technologies, including an overview and demo of [NVIDIA’s NeMo framework](https://github.com/NVIDIA/NeMo).
 
 ![](/assets/images/nemo-llm-og.jpg)
 
