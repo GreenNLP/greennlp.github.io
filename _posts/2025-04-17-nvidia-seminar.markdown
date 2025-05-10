@@ -18,3 +18,8 @@ Join us on May 16 at 10:00-13:00 in Helsinki (or online) for a session hosted by
 **11.30-12.00:** NVIDIA inference microservices and blueprints for NLP  
 **12.00-13:00:** open discussion/networking
 
+## Speakers:
+
+Dr. Giuseppe Fiameni, NVIDIA-NVAITC EMEA Manager, [publications](https://scholar.google.com/citations?user=Se2mLvIAAAAJ&hl=en)  
+Dr. Andrea Pilzer, NVIDIA-NVAITC Italy, [publications](https://scholar.google.it/citations?user=zooORRsAAAAJ&hl=it)  
+Dr. Niki Loppi, NVIDIA-NVAITC Finland, [publications](https://scholar.google.co.uk/citations?user=Drxww9EAAAAJ&hl=en)
