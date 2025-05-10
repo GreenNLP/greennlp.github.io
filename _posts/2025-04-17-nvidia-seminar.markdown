@@ -10,7 +10,7 @@ Join us on May 16 at 10:00-13:00 in Helsinki (or online) for a session hosted by
 ![](/assets/images/nemo-llm-og.jpg)
 
 **When**: May 16, 2025 at 10:00-13.00  
-**Where**: University of Helsinki, Metsätalo (Unioninkatu 40), [lecture room 12](https://tilavaraus.helsinki.fi/en/city-centre/metsatalo-unioninkatu-40/metsatalo-b308-room-12) and Teams/Zoom (hybrid)  
+**Where**: University of Helsinki, Metsätalo (Unioninkatu 40), [lecture room 12](https://tilavaraus.helsinki.fi/en/city-centre/metsatalo-unioninkatu-40/metsatalo-b308-room-12) and Zoom (hybrid)  
 **Streaming**: [Zoom link](https://helsinki.zoom.us/j/69284730056?pwd=Hk0jkeNbBns7P5malpY9V8rjkRj4ni.1)
 
 **10.00-10.30:** NVIDIA NeMo overview  
