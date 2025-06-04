@@ -13,9 +13,10 @@ Join us on May 16 at 10:00-13:00 in Helsinki (or online) for a session hosted by
 **Where**: University of Helsinki, Metsätalo (Unioninkatu 40), [lecture room 12](https://tilavaraus.helsinki.fi/en/city-centre/metsatalo-unioninkatu-40/metsatalo-b308-room-12) and Zoom (hybrid)  
 **Streaming**: [Zoom link](https://helsinki.zoom.us/j/69284730056?pwd=Hk0jkeNbBns7P5malpY9V8rjkRj4ni.1)
 
-**10.00-10.30:** NVIDIA NeMo overview  
-**10.30-11.30:** Live demo: Synthetic Data Generation & Fine Tuning with NeMo  
-**11.30-12.00:** NVIDIA inference microservices and blueprints for NLP  
+**10.00-10.10:** [Introduction of NVAITC](/assets/pdfs/GreenNLP-NVAITC_intro_Niki.pdf)  
+**10.10-10.30:** [NVIDIA NeMo overview](/assets/pdfs/GreenNLP-NVAITC_NeMo_Giuseppe.pdf)  
+**10.30-11.30:** [Live demo: Synthetic Data Generation & Fine Tuning with NeMo](/assets/pdfs/GreenNLP-NVAITC_FineTune_Giuseppe.pdf)  
+**11.30-12.00:** [NVIDIA inference microservices and blueprints for NLP](/assets/pdfs/GreenNLP-NVAITC_Inf_Andrea.pdf)  
 **12.00-13:00:** open discussion/networking
 
 ## Speakers:
