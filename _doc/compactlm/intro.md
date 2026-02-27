@@ -14,7 +14,7 @@ Luckily, there are open-weight models that you can run on your own computer or s
 This page contains advice for how to run LLMs efficiently locally and links to other useful recourses.
 
 
-### Tools of the trade
+### LLM inference on LUMI
 
 Probably the simplest way to start running LLMs is by using [Ollama](https://ollama.com/). The free tier lets you run models locally and even gives access to some limited cloud computing. Another popular library for high-performance LLM inference is called [SGLang](www.sglang.io).
 
@@ -75,10 +75,10 @@ model = LLM(model="openai/gpt-oss-120b",
 input = [
     {"role": "system",
      "content": "Your task is to return all emails, phone numbers and addresses that are in the input document. "
-                "Your output must be JSON with keys 'emails', 'phone_numbers', and 'addresses'. 
+                "Your output must be JSON with keys 'emails', 'phone_numbers', and 'addresses'."
     },
     {"role": "user",
-     "content": "Here is our contact information! You can email us at example@email.com or you can call us at 000-123456. "
+     "content": "Here is our contact information! You can email us at example@email.com or you can call us at 000-123456."
     }
 ]
 
