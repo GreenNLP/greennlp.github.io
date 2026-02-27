@@ -35,7 +35,8 @@ model = LLM(model="openai/gpt-oss-120b",
 # Instruction fine-tuned models expect their input to follow the models "chat template"
 # Here, we can use vLLM's model.chat() to automatically apply the correct chat template to our input
 # Before calling model.chat(), we need to format our input as a list of dictionaries.
-# The first dictionary contains the system prompt and the second dictionary contains the user prompt. 
+# The first dictionary contains the system prompt and the second dictionary contains the user prompt.
+
 input = [
     {"role": "system", "content": "You are a helpfull assistant"},
     {"role": "user", "content": "Write me an essay about LLMs."}
@@ -53,10 +54,52 @@ sampling_params = SamplingParams(
 output = model.chat(input, sampling_params=sampling_params)
 ```
 
-Often for large scale data analysis, you probably want to ensure that the model output follows a predetermined structure, such as JSON. For this, you want to use Structured Outputs like this:
+Often for large scale data analysis, you probably want to ensure that the model output follows a predetermined structure, such as JSON. For this, you want to use Structured Outputs like this (difference to above code highlighted with comments):
 ```python
+import torch
+from vllm import LLM, SamplingParams
+# Add these imports:
+from vllm.sampling_params import StructuredOutputsParams
+from pydantic import BaseModel 
 
-# More to come...
+model = LLM(model="openai/gpt-oss-120b",
+            download_dir=/scratch/project_<your_proj_num>/cache,
+            dtype="bfloat16",
+            tensor_parallel_size=torch.cuda.device_count(),
+            enforce_eager=False,
+            gpu_memory_utilization=0.8,
+            )
+
+# This time we want our output to be strucutred.
+# It is often good to explicitly instruct the model to output JSON in addtion to using StructuredOutputs 
+input = [
+    {"role": "system",
+     "content": "Your task is to return all emails, phone numbers and addresses that are in the input document. "
+                "Your output must be JSON with keys 'emails', 'phone_numbers', and 'addresses'. 
+    },
+    {"role": "user",
+     "content": "Here is our contact information! You can email us at example@email.com or you can call us at 000-123456. "
+    }
+]
+
+# Create a ResponseFormat class
+class ResponseFormat(BaseModel):
+  emails: list[str]
+  phone_numbers: list[str]
+  addresses: list[str]
+
+json_schema = ResponseFormat.model_json_schema()
+
+sampling_params = SamplingParams(
+    temperature=0.2,
+    top_p: 0.5,
+    repetition_penalty=1,
+    max_tokens=5000,
+    # Add json_schema to sampling parameters
+    structured_outputs=StructuredOutputsParams(json=json_schema)
+)
+
+output = model.chat(input, sampling_params=sampling_params)
 
 ```
 
