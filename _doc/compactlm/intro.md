@@ -54,6 +54,8 @@ sampling_params = SamplingParams(
 output = model.chat(input, sampling_params=sampling_params)
 ```
 
+### Structured outputs
+
 Often for large scale data analysis, you probably want to ensure that the model output follows a predetermined structure, such as JSON. For this, you want to use Structured Outputs like this (difference to above code highlighted with comments):
 ```python
 import torch
@@ -103,6 +105,12 @@ output = model.chat(input, sampling_params=sampling_params)
 
 ```
 
+#### Output validation
+While Structured Outputs in vLLM are great for processing large amounts of data in an organized fashion, the model outputs are NOT guaranteed to follow the given schema. Thus, if you blinldy assume that each output has the expected json keys and contents, you will run into trouble down the line. You should therefore always validate the model output before passing it along.
+
+
+### Submitting the batch job
+
 To use the newest models available on the HuggingFace hub, you also need a recent version of vLLM. Therefore it is recommended to use a recent container built by the LUMI AI factory. The instructions below are modifier from the original [CSC docs](https://docs.lumi-supercomputer.eu/laif/software/ai-environment/).
 
 To launch your script on a single node using a LUMI AI factory container, you SLURM launch script should look something like this:
@@ -125,7 +133,8 @@ module purge
 module use /appl/local/laifs/modules
 module load lumi-aif-singularity-bindings
 
-# Choose the latest container for most up-to-date packages. It might make sense to `cp` this into you project `scratch`. 
+# Choose the latest container for most up-to-date packages.
+# It might make sense to `cp` this into you project `scratch`.
 export SIF=/appl/local/laifs/containers/lumi-multitorch-u24r64f21m43t29-20260124_092648/lumi-multitorch-full-u24r64f21m43t29-20260124_092648.sif
 
 srun singularity run --rocm --bind /scratch/project_<your_proj_num> \
